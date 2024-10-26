@@ -1,0 +1,111 @@
+
+body {
+    background: linear-gradient(45deg, #ffffff, #cccccc, #7f7f7f, #333333);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.container {
+    margin-top: 20px; /* Reducción del margen superior */
+}
+
+h3 {
+    color: white; /* Color del título */
+    text-align: center; /* Centramos el título */
+    margin-bottom: 0; /* Eliminar margen inferior para acercar el texto */
+    font-size: 1.5rem; /* Tamaño de fuente reducido para el título */
+}
+
+.table {
+    width: 400px; /* Ancho fijo reducido para la tabla */
+    margin: 0 auto; /* Centrar la tabla */
+    border-collapse: collapse; /* Evita espacios entre celdas */
+    border-radius: 10px; /* Redondea las esquinas */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.459); /* Sombra de la tabla */
+}
+
+.thead-dark th {
+    background-color: #343a40; /* Color de fondo de encabezado oscuro */
+    color: white; /* Color de texto en encabezado */
+    padding: 6px; /* Espaciado interno reducido en encabezados */
+    text-align: left; /* Alineación a la izquierda */
+    font-size: 0.9rem; /* Tamaño de fuente reducido en encabezados */
+}
+
+.table th, .table td {
+    padding: 6px; /* Espaciado interno reducido en celdas */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Línea de separación entre filas */
+    font-size: 0.9rem; /* Tamaño de fuente reducido en celdas */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+.table tr:nth-child(odd) {
+    background-color: white; /* Color de fondo para filas impares */
+}
+
+.table tr:hover {
+    background-color: #cbcbcb; /* Color al pasar el mouse */
+    transition: 0.3s ease;
+}
+
+.text-center {
+    font-size: 4vw; /* Tamaño de fuente responsivo reducido */
+    font-family: "Rubik Wet Paint", serif; /* Tipografía */
+    font-weight: 400; /* Peso de fuente */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Sombra de texto blanca */
+    margin-top: 0; /* Eliminar margen superior */
+    color: #343a40;
+}
+
+.table-header {
+    background-color: #343a40; /* Color de fondo oscuro */
+
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.navegacion {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+    margin: 0; /* Eliminar margen */
+    background-color: #343a40; /* Color de fondo */
+    display: flex; /* Usar flexbox para alineación */
+}
+
+.navegacion-item {
+    margin: 0; /* Sin margen */
+}
+
+.navegacion-enlace {
+    display: block; /* Mostrar como bloque */
+    padding: 15px 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición para el hover */
+}
+
+.navegacion-enlace:hover {
+    background-color: #495057; /* Color de fondo al pasar el mouse */
+}
+
+.navegacion-enlace.activo {
+    background-color: #007bff; /* Color para el enlace activo */
+}
+
+.navegacion-enlace.desactivado {
+    color: #6c757d; /* Color para el enlace desactivado */
+    pointer-events: none; /* Desactivar interacción */
+    background-color: transparent; /* Sin color de fondo */
+}
+
+

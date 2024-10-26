@@ -1,0 +1,137 @@
+html, body {
+    background: linear-gradient(45deg, #1f07a7, #31cf53);
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Mantén una sola definición de fuente */
+}
+
+.titulo {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 5px; /* Reduce el margen inferior del título */
+}
+
+.name {
+    font-size: 5vw;
+    font-family: "Rubik Wet Paint", serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+.panelCarta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    height: auto; /* Cambia a auto para que se ajuste a la altura del contenido */
+    padding-top: 20px; /* Espaciado superior opcional */
+}
+
+.card-header {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px; /* Mantiene el espaciado interno arriba y abajo */
+    text-align: center;
+    margin: 0; /* Elimina márgenes para que se alinee con el borde de la carta */
+}
+
+.card-header, h3{
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    text-shadow: 2px 2px 4px #31cf53;
+}
+
+.card {
+    background: linear-gradient(45deg, rgba(47, 140, 233, 0.8), rgba(56, 230, 134, 0.8));
+    border-radius: 10px; /* Mantén el border-radius en la carta */
+    overflow: hidden; /* Asegura que el border-radius funcione */
+    width: 90%; /* Ancho flexible */
+    max-width: 400px; /* Ancho máximo */
+    margin-top: 10px; /* Acerca la carta al título */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+    padding: 20px; /* Espaciado interno en el cuerpo de la carta */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaciado entre los grupos de formulario */
+}
+
+.form-control {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn {
+    width: 100%; /* Botón ocupa todo el ancho */
+    padding: 10px; /* Espaciado interno */
+    background-color: #28a745; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #218838; /* Color del botón al pasar el cursor */
+    width: 100%; /* Botón ocupa todo el ancho */
+    padding: 10px; /* Espaciado interno */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-shadow: 2px 2px 4px #ddefe1;
+    transition: 0.3s ease;
+}
+
+.alert {
+    margin-top: 10px; /* Espaciado superior para la alerta */
+}
+
+.txt{
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #ddefe1;
+}
+
+.form-control::placeholder {
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #ddefe1;
+}
+
+.form-control {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave */
+}
+
+.form-control:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra al enfocarse */
+    border-color: #666; /* Cambiar el color del borde al enfocarse */
+}
